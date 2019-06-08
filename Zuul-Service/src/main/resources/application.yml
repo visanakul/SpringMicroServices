@@ -9,6 +9,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:1111/eureka/
+    fetch-registry: true
     
 zuul:
   prefix: /api
@@ -21,3 +22,4 @@ zuul:
      path: /hello/**
      service-id: Hello-Service
     
+
